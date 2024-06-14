@@ -17,6 +17,7 @@
   --ff-base: "Barlow Semi Condensed", sans-serif;
 
   --fs-regular: 0.813rem;
+  --fs-title: 1.188rem;
 
   --fw-regular: 500;
   --fw-semibold: 600;
@@ -92,6 +93,12 @@ body{
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top 1% right 15%;
+}
+
+.title {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-semibold);
+  line-height: 1.2;
 }
 
 @media (max-width: 1024px) {
