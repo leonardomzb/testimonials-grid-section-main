@@ -55,7 +55,7 @@ body{
 .inner-grid{
   display: grid;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: .5rem;
 }
 
