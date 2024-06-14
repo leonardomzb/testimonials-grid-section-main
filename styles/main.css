@@ -1,0 +1,111 @@
+:root{
+
+  --clr-900-hsl: 219, 29%, 14%;
+  --clr-800-hsl: 217, 19%, 35%;
+  --clr-700-hsl: 263, 55%, 52%; 
+  --clr-600-hsl: 0, 0%, 81%;
+  --clr-500-hsl: 210, 46%, 95%;
+  --clr-white-hsl: 0, 0%, 100%;
+
+  --clr-900: hsl(var(--clr-900-hsl));
+  --clr-800: hsl(var(--clr-800-hsl));
+  --clr-700: hsl(var(--clr-700-hsl));
+  --clr-600: hsl(var(--clr-600-hsl));
+  --clr-500: hsl(var(--clr-500-hsl));
+  --clr-white: hsl(var(--clr-white-hsl));
+
+  --ff-base: "Barlow Semi Condensed", sans-serif;
+
+  --fs-regular: 0.813rem;
+
+  --fw-regular: 500;
+  --fw-semibold: 600;
+}
+
+body{
+  background-color: var(--clr-500);
+  font-family: var(--ff-base);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-regular);
+  display: grid;
+  place-content: center;
+  color: var(--clr-600);
+}
+
+.container{
+  max-width: 69.375rem;
+  display: grid;
+  grid-template-columns: 1fr 16rem;
+  padding: 1rem;
+}
+
+
+/* UTIL*/
+.grid{
+  display: grid;
+  gap: 2rem;
+}
+
+.flex{
+  display: flex;
+  gap: 2rem;
+}
+
+.inner-grid{
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+.util-flex{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.avatar-img{
+  width: 30px;
+  border-radius: 50%;
+}
+
+.padding{ padding: 2rem; }
+
+.bg-900 { background-color: var(--clr-900); }
+.bg-800 { background-color: var(--clr-800); }
+.bg-700 { background-color: var(--clr-700); }
+.bg-white { background-color: var(--clr-white); }
+
+.color-900 { color: var(--clr-900); }
+.color-800 { color: var(--clr-800); }
+.color-white { color: var(--clr-white); }
+
+.color-900-opa-50 { color: hsl(var(--clr-900-hsl), 50%); }
+.color-900-opa-70 { color: hsl(var(--clr-900-hsl), 70%); }
+.color-800-opa-50 { color: hsl(var(--clr-800-hsl), 50%); }
+.color-800-opa-70 { color: hsl(var(--clr-800-hsl), 70%); }
+.color-white-opa-50 { color: hsl(var(--clr-white-hsl), 50%); }
+.color-white-opa-70 { color: hsl(var(--clr-white-hsl), 70%); }
+
+.bg-quot{
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 1% right 15%;
+}
+
+@media (max-width: 1024px) {
+  body{
+    place-content: initial;
+    margin-block: 3rem;
+  }
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-container{
+    display: grid;
+  }
+}
